@@ -1,0 +1,78 @@
+.ele-moveScale{
+	-webkit-animation:moveScale .8s ease-in-out both;
+	animation:moveScale .8s ease-in-out both;
+	-webkit-animation-delay:.8s;
+	animation-delay:.8s;
+}
+@-webkit-keyframes moveScale {
+    from{
+    	-webkit-transform:scale(0.6); 
+        opacity:0;
+    }
+}
+@keyframes moveScale {
+    from{
+    	transform:scale(0.6); 
+        opacity:0;
+    }
+}
+.ele-moveScale2{
+	-webkit-animation:moveScale2 .8s ease-in-out both;
+	animation:moveScale2 .8s ease-in-out both;
+}
+@-webkit-keyframes moveScale2 {
+    from{
+    	-webkit-transform:scale(0.4); 
+        opacity:0;
+    }
+}
+@keyframes moveScale2 {
+    from{
+    	transform:scale(0.4); 
+        opacity:0;
+    }
+}
+.ele-moveFromLeft{
+	-webkit-animation:moveFromLeft .8s ease-out both;
+	animation:moveFromLeft .8s ease-out both;
+	-webkit-animation-delay:0s;
+	animation-delay:0s;
+}
+@-webkit-keyframes moveFromLeft {
+    from{
+    	-webkit-transform:translateX(-200%); 
+        opacity:0;
+    }
+}
+@keyframes moveFromLeft {
+    from{
+    	transform:translateX(-200%); 
+        opacity:0;
+    }
+}
+.ele-moveTwinkle{
+	-webkit-animation:moveTwinkle 2s ease-in-out infinite both;
+	animation:moveTwinkle 2s ease-in-out infinite both;
+	-webkit-animation-delay:.6s;
+	animation-delay:.6s;
+}
+@-webkit-keyframes moveTwinkle{
+	0%{
+		-webkit-transform:scale(0.2);
+		opacity:.1;
+	}
+	100%{
+		-webkit-transform:scale(1);
+		opacity:1;
+	}
+}
+@keyframes moveTwinkle{
+	0%{
+		transform:scale(0.2);
+		opacity:.1;
+	}
+	100%{
+		transform:scale(1);
+		opacity:1;
+	}
+}
