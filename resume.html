@@ -11,7 +11,7 @@
 <meta content="black" name="apple-mobile-web-app-status-bar-style"> 
 <meta content="telephone=no" name="format-detection">  
 <meta content="email=no" name="format-detection"> 
-<title>黄磊</title>
+<title>resume</title>
 <!-- uc强制竖屏 -->
 <meta name="screen-orientation" content="portrait">
 <!-- uc强制全屏 -->
@@ -28,7 +28,8 @@
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" href="css/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-<link rel="stylesheet" type="text/css" href="css/r_style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Swiper3.0.4-->
 <style>
 
 .blue-slide {
@@ -88,10 +89,10 @@ html,body{
 </div>
 
 <!--loading-->
-<!-- <div id="loading" class="loading">
+<div id="loading" class="loading">
    <div class="panel left"></div>
    <div class="panel right"></div>
-</div> -->
+</div>
 <!-- <div class="loading" id="loading">
   <div class="spinner">
     <div class="rect1"></div>
@@ -103,13 +104,13 @@ html,body{
 </div> -->
 
 <!--API调用解释http://www.swiper.com.cn/api/index.html-->
-<div class="swiper-container">
+<div class="swiper-container swiper-container-v">
   <div class="swiper-wrapper">
     
   	<!--第一屏-->
     <div class="page page1 swiper-slide blue-slide">
     	  <div class="page_inner">
-            <img class="animated zoomIn img1 ani-delay5" src="images/arvar.jpg" alt="">
+            <img class="animated zoomIn img1 ani-delay3" src="images/arvar.jpg" alt="">
             <!-- <p>slider1</p> -->
             <p class="name animated zoomInLeft ani-delay9">黄 磊</p>
             <p class="zhiye pos_a animated zoomInLeft ani-delay12">web前端/移动端H5工程师</p>
@@ -123,8 +124,8 @@ html,body{
     <div class="page page2 swiper-slide red-slide">
     	  <div class="page_inner">
             <div id="scene1" class="scene1 pos_a animated bounceIn ani-delay3 f_word">
-               <p>我会什么呢？</p>
-               <h5 id="word_scene" class="word_scene">往下看哦！</h5>
+               <p style="display:inline-block;">我会什么呢？</p>
+               <h5 id="word_scene" class="word_scene" style="display:inline-block;">往下看哦！</h5>
             </div>
             <div id="scene2" class="scene2 f_word"></div>
             <!-- <p class="animated slideInLeft ani-delay2" style="background:#fff;">slider2</p> -->
@@ -157,120 +158,191 @@ html,body{
         </div>
     </div>
     <!--第四屏-->
-    <div class="page page4 swiper-slide wheat-slide">
-    	  <div class="page_inner">
-            <p>slider4</p>
-            <span class="swiper-arrow"></span>  
+    <div class="page page4 swiper-slide" style="height:100%;position:relative;"> 
+        <div class="page4_ani">
+            <div class="top_bak"></div>
+            <div class="left_btn"></div>
+            <div class="right_btn"></div>
+            <div class="work_title">部分作品</div>
+            <img src="images/work_down.png" class="work_down animated slideInUp ani-delay1" alt="">
         </div>
+        <div class="swiper-container swiper-container-h swiper-con-h">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="work_wrap work_wrap_fst">               
+                  <div class="work">
+                    <a href="javascript:;"><img src="images/work1.gif" alt=""></a>
+                  </div>
+                  <div class="work">
+                    <a href="javascript:;"><img src="images/work2.gif" alt=""></a>
+                  </div>
+                  <div class="work">
+                    <a href="javascript:;"><img src="images/work3.gif" alt=""></a>
+                  </div>
+                  <div class="work">
+                    <a href="javascript:;"><img src="images/work4.gif" alt=""></a>
+                  </div>
+                </div>                
+              </div>
+              <div class="swiper-slide">
+                <div class="work_wrap">                
+                  <div class="work">
+                     <a href="http://legold.cc"><img src="images/work5.gif" alt=""></a>
+                  </div>
+                  <div class="work">
+                     <a class="word_a" href="">触摸<br>事件<br>demo</a>
+                  </div>
+                  <div class="work"></div>
+                  <div class="work"></div>
+                </div>
+              </div>
+                                  
+          </div>
+          <!-- <div class="swiper-pagination swiper-pagination-h"></div> -->
+
+        </div>
+        <span class="swiper-arrow"></span>  
+      
     </div>
     <!--第五屏-->
     <div class="page page5 swiper-slide green-slide">
-    	  <div class="page_inner">
-            <p>slider5</p>
-            <span class="swiper-arrow"></span>  
-        </div>
-    </div>
-    <!--第六屏-->
-    <div class="page page6 swiper-slide sky-slide">
-    	  <div class="page_inner">
-            <p>slider6</p>
-            <span class="swiper-arrow"></span> 
-        </div> 
-    </div>
-    <!--第七屏-->
-    <div class="page page7 swiper-slide he-slide">
-    	  <div class="page_inner">
-            <p>slider7</p>
+        <div class="page_inner">            
+            <div style="text-align:center;padding-top:20%;"><img class="wx animated rollIn ani-delay3" src="images/wx.gif" alt=""></div>
+            <p class="contact animated rollIn ani-delay5">加我微信联系我哦！或call me</p>
+            <p class="phone animated rollIn ani-delay8">18810146977</p>
             <!-- <span class="swiper-arrow"></span> -->  
         </div>
     </div>
+    <!--第六屏-->
+    <!-- <div class="page page6 swiper-slide sky-slide">
+        <div class="page_inner">
+            <p>slider6</p>            
+        </div> 
+    </div>
+     -->
   </div>
-  <div class="swiper-pagination"></div>  <!--分页器-->
+  <div class="swiper-pagination swiper-pagination-v"></div>  <!--分页器-->
 </div>
+
+<!-- <div id="soundcontainer"><audio id="bgsound" loop="loop" src="http://qn.media.epub360.com/materials/audio/f2c42ce117898c7d0572c3b58601c004.mp3"> <source src="http://qn.media.epub360.com/materials/audio/f2c42ce117898c7d0572c3b58601c004.mp3"> </audio></div> -->
 
 <script src="js/zepto.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> <!--微信分享-->
+<!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> --> <!--微信分享-->
 <script src="js/n_time.js"></script>
 <script type="text/javascript">
   
-    /*$('.page').eq(0).children().hide();
-    //loading
-    document.onreadystatechange = subSomething;
+   $('.page').eq(0).children().hide();
+   //loading
+   document.onreadystatechange = subSomething;
 	 function subSomething(){
 			if(document.readyState == "complete"){ 
                 var oLoad = document.getElementById('loading'); 
                 $(oLoad).addClass('open');
-				setTimeout(function(){		
+				    setTimeout(function(){		
                     oLoad.style.display = 'none';            	
-		            oLoad.parentNode.removeChild(oLoad);  
-		            $('.page').eq(0).children().show();                
+		                oLoad.parentNode.removeChild(oLoad);  
+		                $('.page').eq(0).children().show();                
 		        },1000);
 			}
-	 }*/
+	 }
   
+  document.oncontextmenu = function(){
+  	return false;
+  };
+
   //创建swiper对象
-  var mySwiper = new Swiper('.swiper-container',{
+  var mySwiper = new Swiper('.swiper-container-v',{
   	direction:'vertical',
     loop: false,
 	  autoplay: 0,  // 3000 自动切换的时间间隔（ms），不设定该参数不会自动切换，用户操作后autoplay停止
     //分页器
-    pagination:'.swiper-pagination',
+    //pagination:'.swiper-pagination-v',
     effect:'slide'
 
   });
+
+  var swiperH = new Swiper('.swiper-container-h', {   
+        direction:'horizontal',
+        paginationClickable: true,
+        spaceBetween: 10
+    });
   
 
-
-  /*var dw = document.documentElement.clientWidth, dh = document.documentElement.clientHeight;
-  var pw = window.screen.width, ph = window.screen.height;
-  setTimeout(function(){
-    alert('<div>'+dw+'-'+dh+'-'+pw+'-'+ph+'</div>');
-  },2000);*/
-
-  (function(){
-    function setSize(){
+  ;(function(){
+    function setSize(opt){
         //首先获得移动端设备的宽高
-        var w = document.documentElement.clientWidth;
-        var h = document.documentElement.clientHeight;
-        console.log(w,h);
-        //设置默认设计稿为640x1136的宽高
-        var gao = {
-           width:640,
-           height:1100
-        };
-        //然后进行适配
-        var d_ratio = w/h;
-        var s_ratio = gao.width/gao.height;
-        var m = h*s_ratio, n = w/s_ratio;
-        console.info(d_ratio,s_ratio);
-        var $page = $('.page_inner');
-        if(d_ratio>s_ratio){
-            //肖像模式
-            console.log('肖像模式');
-            $page.css({'height':h,'width':m,'margin':0,'left':Math.floor((w-m)/2)});
-        }else if(d_ratio.toFixed(3) == s_ratio.toFixed(3)){
-            //正好匹配
-            console.log('正好匹配哈');
-            $page.css({'width':w,'height':h,'margin':0});
-        }else{
-            console.log('风景模式');
-            $page.css({'width':w,'height':n,'margin':0,'top':Math.floor((h-n)/2)});
+        var dw = document.documentElement.clientWidth || window.innerWidth;
+            dh = document.documentElement.clientHeight || window.innerHeight,
+            dr = dw/dh;
+
+        console.log(dw,dh,dr);
+        //设置默认设计稿为640x1100的宽高
+        //
+        var pw = opt.width || 320,
+            ph = opt.height || 550;
+            pr = pw/ph;
+
+        var m = dh*pr, n = dw/pr;
+        console.info(dr,pr);
+
+        var ele = document.querySelectorAll(opt.el);
+        var i = ele.length;
+        
+        function setStyle(obj,opt){
+          for(var i in opt){
+             obj[i] = opt[i] + 'px';
+          }
+        }
+        function pageWork(obj){
+            var _o = obj.style;
+            if(dr>pr){
+                console.log('肖像模式');
+                setStyle(_o,{height:dh,width:m,margin:0,left:Math.floor((dw-m)/2)});                
+                /*_o.height = dh + 'px';
+                _o.width = m + 'px';
+                _o.margin = 0;
+                _o.left = Math.floor((dw-m)/2) + 'px';*/
+            }else if(dr.toFixed(3) === pr.toFixed(3)){
+                console.log('正好匹配哈');
+                setStyle(_o,{width:dw,height:dh,margin:0});
+                /*_o.width = dw + 'px';
+                _o.height = dh + 'px';
+                _o.margin = 0;*/
+            }else{
+                console.log('风景模式');
+                setStyle(_o,{width:dw,height:n,margin:0,top:Math.floor((dh-n)/2)});
+                /*_o.width = dw + 'px';
+                _o.height = n + 'px';
+                _o.margin = 0;
+                _o.top = Math.floor((dh-n)/2) + 'px';*/
+            }
+        }
+
+        while(--i>=0){
+           pageWork(ele[i]);
         }
     }
-    setSize();
+
+    setSize({el:'.page_inner',width:'320',height:'550'});
 
     window.addEventListener('resize',function(){
-      setSize();
+      setSize({el:'.page_inner',width:'320',height:'550'});
     },false);
     window.addEventListener('orientationchange',function(){
-      setSize();
+      setSize({el:'.page_inner',width:'320',height:'550'});
     },false);
 
-    setTimeout(setSize,333);
+    setTimeout(function(){
+      setSize({el:'.page_inner',width:'320',height:'550'});
+    },333);
     
+    //现在把方法暴露到全局，控制权交给你了
+    window.setSize = setSize;
 
   })();
+
+
 
 
   //如果某个元素有属性data-show="block"说明显示为block
@@ -299,7 +371,6 @@ html,body{
   
   var aa = null;
 
-
   var tch = {
   	x:null,
   	y:null,
@@ -315,6 +386,17 @@ html,body{
      console.log(tch.x,tch.y);
   },false);
   document.addEventListener('touchend',function(e){
+    /*$('.swiper-con-h').find('.swiper-slide').css({
+      width:'60%',
+      height:'50%',
+      transform:'translateY(8%)'
+    });
+    $('.swiper-con-h').find('.swiper-slide-active').css({
+      width:'80%',
+      height:'66%',
+      transform:'translateY(0)'
+    });*/
+
   	var touch = e.changedTouches[0];
   	tch.endX = touch.pageX;
   	tch.endY = touch.pageY;
@@ -326,29 +408,35 @@ html,body{
 	  	 $('#scene2').empty();
 
 	  }else{
-	  	console.warn('第二页啊');	
+	  	console.log('第二页啊');	
 	  	if($('#scene2 div').length == 0){
 	  		clearTimeout(aa);
 		  	$('#scene2').empty();
 	  		aa = setTimeout(function(){
 	  			for(var i=0;i<len;i++){
-	  				var oDiv = document.createElement('div');
-			  		oDiv.style.display = 'block';
-			  		oDiv.className = 'animated bounceInDown';
-			  		oDiv.innerHTML = arr[i];
-			  		scene2.appendChild(oDiv);
-				  	/*(function(i){
-				  	    setTimeout(function(){
-					  		var oDiv = document.createElement('div');
-					  		oDiv.style.display = 'block';
-					  		oDiv.className = 'animated zoomInLeft';
-					  		oDiv.innerHTML = arr[i];
-					  		scene2.appendChild(oDiv);
+  	  				var oDiv = document.createElement('div');
+  			  		oDiv.style.display = 'block';
+  			  		oDiv.className = 'animated bounceInDown';
+  			  		oDiv.innerHTML = arr[i];
+  			  		scene2.appendChild(oDiv);
+  				  	/*(function(i){
+  				  	    setTimeout(function(){
+  					  		var oDiv = document.createElement('div');
+  					  		oDiv.style.display = 'block';
+  					  		oDiv.className = 'animated zoomInLeft';
+  					  		oDiv.innerHTML = arr[i];
+  					  		scene2.appendChild(oDiv);
 
-					  	},500*i);
-				  	})(i);*/
+  					  	},500*i);
+  				  	})(i);*/
 
-				}
+  				}
+
+          var scene2_ht = scene2.offsetHeight;
+          var w = document.documentElement.clientHeight || window.innerHeight;          
+          if(scene2_ht>=w){
+             $('#scene2 div').css('font-size','12px');
+          }
 	  		},2000);
 	  		
 	  	}
@@ -356,7 +444,26 @@ html,body{
 
   	//
   },false);
+
   
+  //第三屏图片布局
+  $(function(){
+    function setThird(){
+        var WH = 52 + 82;
+        var dh = $(window).height();
+        var $work_wrap = $('.work_wrap');
+        $work_wrap.css({
+          'height':parseInt(dh-WH),
+          'top':52
+        });
+    }
+    setThird();
+    $(window).resize(function(){
+      setThird();
+    });
+  });
+  
+
 
  
 
