@@ -151,7 +151,7 @@
        </div>
        <div class="section">
           <!-- <h1>项目经验</h1> -->
-          <section id="dg-container" class="dg-container">
+          <div id="dg-container" class="dg-container">
             <div class="dg-wrapper">
               <a href="http://wangood.com/xyh"><img src="images/rr.png" ><div>入香如净</div></a>
               <a href="http://wenxiang.4006188666.com/jing2016.php"><img src="images/ww.png" alt=""><div>竞购基于微信二次开发</div></a>
@@ -165,8 +165,9 @@
             <nav>  
               <span class="dg-prev">&lt;</span>
               <span class="dg-next">&gt;</span>
-            </nav
-          </section>
+            </nav>            
+          </div>
+          <div><a href="">更多作品 =》</a></div>
        </div>
        <div class="section">
          <div class="sec_inner show_from_top">
@@ -211,23 +212,50 @@
   <script type="text/javascript" src="js/jquery.gallery.js"></script>
   <script src="js/n_time.js"></script>
   <script type="text/javascript">
+    //第三屏轮播图设置
     $(function() {
       $('#dg-container').gallery({
         autoplay  : true
       });
     });
-  </script>
-  <script>
+
+  //最后一屏背景色根据时间实时刷新
+  var bg_color = null;
+  function check(m){
+      return m<10?('0'+m):m;
+    }
+  var time = function(){
+    var date = new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+
+    h = check(h);
+    m = check(m);
+    s = check(s);
+      
+    var x = '#' + h +m + s;
+    bg_color = x;
+    
+    $('.section').eq(3).css('background',x);
+    
+    setTimeout(time,300);
+    //console.log(x);       
+    
+
+  };
+
+  time();
+
   //调用
   $(function(){
      $('#hl_work').fullpage({
-       sectionsColor:['#1bbc9b','#4BBFC3','#7BAABE','#4BBFC3','#1bbc9b'],
+       sectionsColor:['#1bbc9b','#4BBFC3','#7BAABE','#4BBFC3'],  //,'#1bbc9b'
        'navigation':true
        //continuousVertical:true   //循环滚动
      });
   });
-  </script>
-  <script>
+
   //loading
   $('#hl_work').hide();
   $(function(){
